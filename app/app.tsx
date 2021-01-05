@@ -50,6 +50,7 @@ function App() {
 
   // Kick off initial async loading actions, like loading fonts and RootStore
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-extra-semi
     ;(async () => {
       await initFonts() // expo
       setupRootStore().then(setRootStore)
